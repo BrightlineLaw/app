@@ -1,0 +1,14 @@
+{
+  "name": "brightline",
+  "version": "0.0.1",
+  "description": "modular contract assembly",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "brightline ltd <hello@brightline.io> (http://brightline.io)",
+  "license": "MIT",
+  "devDependencies" : {
+  	"electron-prebuilt": "^0.25.1"
+  }
+}
