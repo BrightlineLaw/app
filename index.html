@@ -2,12 +2,31 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<!-- Bootstrap Core CSS -->
+		<!-- ANGULAR ROUTING -->
+		<base href="">
+		<title>Brightline</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js">
-		<title>Hello Boulder!</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="main.css">
+		<!-- ANGULAR JS (inserted in <head> for ngCloak optimization) -->
+		<script src="js/lib/bower_components/angular/angular.min.js"></script>
+		<script src="js/lib/bower_components/angular-route/angular-route.min.js"></script>
 	</head>
+	<!-- End </head> Start <body> -->
+	<div class="ng-cloak" ng-cloak ng-app="Brightline">
 	<body>
-		<h1>Hello Boulder!</h1>
-		<p>We are using io.js <script>document.write(process.version)</script> and Electron <script>document.write(process.versions['electron'])</script>.</p>
+		<header></header>
+		<main>
+			<div ng-view></div>
+		</main>
 	</body>
+	<footer>
+		<!-- JS -->
+		<script src="js/app.js"></script>
+		<script src="js/appRouter.js"></script>
+		<script src="js/controllers/homeCtrl.js"></script>
+	</footer>
+	</div> <!-- End ng-app="Brightline" -->
 </html>
