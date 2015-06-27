@@ -1,5 +1,5 @@
 var Brightline = angular.module('Brightline', [
-	'ngRoute',
+	'ui.router',
 	'appRouter',
 	'homeCtrl'
 ]);

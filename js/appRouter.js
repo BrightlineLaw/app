@@ -1,17 +1,16 @@
-var appRouter = angular.module('appRouter', ['ngRoute'])
+var appRouter = angular.module('appRouter', ['ui.router'])
 
-appRouter.config(function ($routeProvider) {
-	$routeProvider
+appRouter.config(function ($stateProvider, $urlRouterProvider) {
+	
+	// for any unmatched url, redirect to /state1
+	$urlRouterProvider.otherwise('/home');
 
-		.when('', {
-			templateUrl: '../views/home.html',
-			controller: 'homeController',
-			controllerAs: 'homeCtrl'
-		})
-
-		// catch all route
-		.otherwise({
-			redirectTo: ''
+	// setup states
+	$stateProvider
+		.state('/home', {
+			url: '/home',
+			templateUrl: 'partials/home.html',
+			controller: 'homeController'
 		})
 
 })
