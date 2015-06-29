@@ -1,6 +1,6 @@
 var homeCtrl = angular.module('homeCtrl', []);
 
-homeCtrl.controller('homeController', ['$scope', function($scope) {
+homeCtrl.controller('HomeController', ['$scope', function($scope) {
 	var vm = this;
 	$scope.testMessage = "Brightline";
 }]);

@@ -10,7 +10,7 @@ appRouter.config(function ($stateProvider, $urlRouterProvider) {
 		.state('/home', {
 			url: '/home',
 			templateUrl: 'partials/home.html',
-			controller: 'homeController'
+			controller: 'HomeController'
 		})
 
 })
