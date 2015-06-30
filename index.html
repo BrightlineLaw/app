@@ -17,32 +17,6 @@
 	<!-- End </head> Start <body> -->
 	<div class="ng-cloak" ng-cloak ng-app="Brightline">
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Brightline</a>
-				</div>
-				<div id="navbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="/dashboard">Dashboard</a>
-						</li>
-						<li>
-							<a href="#">Settings</a>
-						</li>
-						<li>
-							<a href="#">Profile</a>
-						</li>
-						<li>
-							<a href="#">Help</a>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-right">
-						<input type="text" class="form-control" placeholder="Search...">
-					</form>
-				</div>
-			</div>
-		</nav>
 		<main>
 			<div ui-view></div>
 		</main>
@@ -52,6 +26,7 @@
 		<script src="js/app.js"></script>
 		<script src="js/appRouter.js"></script>
 		<script src="js/controllers/DashboardCtrl.js"></script>
+		<script src="js/controllers/ProfileCtrl.js"></script>
 	</footer>
 	</div> <!-- End ng-app="Brightline" -->
 </html>

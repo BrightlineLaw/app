@@ -1,5 +1,6 @@
 var Brightline = angular.module('Brightline', [
 	'ui.router',
 	'appRouter',
-	'DashboardCtrl'
+	'DashboardCtrl',
+	'ProfileCtrl'
 ]);

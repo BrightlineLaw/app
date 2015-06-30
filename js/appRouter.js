@@ -7,10 +7,15 @@ appRouter.config(function ($stateProvider, $urlRouterProvider) {
 
 	// setup states
 	$stateProvider
-		.state('/dashboard', {
+		.state('dashboard', {
 			url: '/dashboard',
 			templateUrl: 'partials/dashboard.html',
 			controller: 'DashboardController'
+		})
+		.state('profile', {
+			url: '/profile',
+			templateUrl: 'partials/profile.html',
+			controller: 'ProfileController'
 		})
 
 })
