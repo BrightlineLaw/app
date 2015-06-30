@@ -3,5 +3,6 @@ var Brightline = angular.module('Brightline', [
 	'appRouter',
 	'DashboardCtrl',
 	'ProfileCtrl',
-	'SettingsCtrl'
+	'SettingsCtrl',
+	'HelpCtrl'
 ]);

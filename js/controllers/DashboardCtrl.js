@@ -11,5 +11,8 @@ DashboardCtrl.controller('DashboardController', ['$scope', '$state', function($s
 	$scope.goToSettings = function() {
 		$state.go('settings');
 	}
+	$scope.goToHelp = function() {
+		$state.go('help');
+	}
 
 }]);

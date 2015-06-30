@@ -22,5 +22,10 @@ appRouter.config(function ($stateProvider, $urlRouterProvider) {
 			templateUrl: 'partials/settings.html',
 			controller: 'SettingsController'
 		})
+		.state('help', {
+			url: '/help',
+			templateUrl: 'partials/help.html',
+			controller: 'HelpController'
+		})
 
 })
