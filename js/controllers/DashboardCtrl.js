@@ -4,9 +4,12 @@ DashboardCtrl.controller('DashboardController', ['$scope', '$state', function($s
 	var vm = this;
 	$scope.testMessage = "This is /dashboard";
 
-	$scope.profile = function() {
-		console.log("###")
+	// navigation
+	$scope.goToProfile = function() {
 		$state.go('profile');
+	}
+	$scope.goToSettings = function() {
+		$state.go('settings');
 	}
 
 }]);
