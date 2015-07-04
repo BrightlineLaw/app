@@ -14,5 +14,8 @@ DashboardCtrl.controller('DashboardController', ['$scope', '$state', function($s
 	$scope.goToHelp = function() {
 		$state.go('help');
 	}
+	$scope.logout = function() {
+		$state.go('login');
+	}
 
 }]);
