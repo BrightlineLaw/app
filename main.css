@@ -1,9 +1,13 @@
 
 .jumbotron {
-	background: url('img/Supreme_Court.jpg') no-repeat center center;
+	background: url('img/Gavel.jpg') no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding: 600px 0px;
+	padding: 450px 0px;
+}
+
+#login-wrapper {
+	background-color: grey;
 }
