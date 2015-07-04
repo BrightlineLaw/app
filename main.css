@@ -1,3 +1,13 @@
-#top {
-	color: peachpuff;
+
+.jumbotron {
+	background: url('img/Gavel.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 360px 0px;
+}
+
+#login-wrapper {
+	background-color: grey;
 }

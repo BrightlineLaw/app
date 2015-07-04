@@ -2,11 +2,16 @@ var appRouter = angular.module('appRouter', ['ui.router'])
 
 appRouter.config(function ($stateProvider, $urlRouterProvider) {
 	
-	// for any unmatched url, redirect to /state1
-	$urlRouterProvider.otherwise('/dashboard');
+	// for any unmatched url, redirect to /login
+	$urlRouterProvider.otherwise('/login');
 
 	// setup states
 	$stateProvider
+		.state('login', {
+			url: '/login',
+			templateUrl: 'partials/login.html',
+			controller: 'LoginController'
+		})
 		.state('dashboard', {
 			url: '/dashboard',
 			templateUrl: 'partials/dashboard.html',
