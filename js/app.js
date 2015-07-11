@@ -1,4 +1,5 @@
 var Brightline = angular.module('Brightline', [
+	'ngMaterial',
 	'ui.router',
 	'appRouter',
 	'LoginCtrl',

@@ -9,27 +9,27 @@ appRouter.config(function ($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('login', {
 			url: '/login',
-			templateUrl: 'partials/login.html',
+			templateUrl: 'views/login.html',
 			controller: 'LoginController'
 		})
 		.state('dashboard', {
 			url: '/dashboard',
-			templateUrl: 'partials/dashboard.html',
+			templateUrl: 'views/dashboard.html',
 			controller: 'DashboardController'
 		})
 		.state('profile', {
 			url: '/profile',
-			templateUrl: 'partials/profile.html',
+			templateUrl: 'views/profile.html',
 			controller: 'ProfileController'
 		})
 		.state('settings', {
 			url: '/settings',
-			templateUrl: 'partials/settings.html',
+			templateUrl: 'views/settings.html',
 			controller: 'SettingsController'
 		})
 		.state('help', {
 			url: '/help',
-			templateUrl: 'partials/help.html',
+			templateUrl: 'views/help.html',
 			controller: 'HelpController'
 		})
 
