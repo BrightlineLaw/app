@@ -1,5 +1,29 @@
 <!-- begin ui-view -->
-<div class="text-center">
-	<h1>{{testMessage}}</h1>
-	<a class="btn btn-success" ng-click="goToDashboard()">Back</a>
+<div layout="column" layout-fill>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <span>Brightline</span>
+      <!-- fill up the space between left and right area -->
+      <span flex></span>
+      <md-button ng-click="goToDashboard()">Dashboard</md-button>
+      <md-button ng-click="openLeftMenu()">Menu</md-button>
+      <md-button ng-click="logout()">Logout</md-button>
+    </div>
+  </md-toolbar>
+  <md-sidenav md-component-id="left" class="md-sidenav-left">
+    <md-content>
+    	<md-card>
+    		<p layout layout-align="center center">Menu</p>
+    	</md-card>
+    	<md-card>
+    		<p layout layout-align="center center">Settings</p>
+    	</md-card>
+    </md-content>
+  </md-sidenav>
+  	<div layout="row">
+		<div class="text-center">
+			<h1>{{testMessage}}</h1>
+			<a class="btn btn-success" ng-click="goToDashboard()">Back</a>
+		</div>
+	</div>
 </div>

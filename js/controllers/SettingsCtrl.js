@@ -1,6 +1,6 @@
 var SettingsCtrl = angular.module('SettingsCtrl', []);
 
-SettingsCtrl.controller('SettingsController', ['$scope', '$state', function($scope, $state) {
+SettingsCtrl.controller('SettingsController', ['$scope', '$state', '$mdSidenav', function($scope, $state, $mdSidenav) {
 	var vm = this;
 	$scope.testMessage = "This is /settings";
 
@@ -8,5 +8,10 @@ SettingsCtrl.controller('SettingsController', ['$scope', '$state', function($sco
 	$scope.goToDashboard = function() {
 		$state.go('dashboard');
 	}
+
+	// sidenav
+	$scope.openLeftMenu = function() {
+	  $mdSidenav('left').toggle();
+	};
 
 }])
