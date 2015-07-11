@@ -1,8 +1,9 @@
+/*
 #wrapper {
 	font-family: 'Roboto', sans-serif;
+	background-color: #F2F2F2;
 }
 
-/*
 .jumbotron {
 	background: url('img/Gavel.jpg') no-repeat center center;
 	-webkit-background-size: cover;

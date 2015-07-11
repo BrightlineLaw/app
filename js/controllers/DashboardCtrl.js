@@ -1,6 +1,6 @@
 var DashboardCtrl = angular.module('DashboardCtrl', []);
 
-DashboardCtrl.controller('DashboardController', ['$scope', '$state', function($scope, $state) {
+DashboardCtrl.controller('DashboardController', ['$scope', '$state', '$mdSidenav', function($scope, $state, $mdSidenav) {
 	var vm = this;
 	$scope.testMessage = "This is /dashboard";
 
@@ -17,5 +17,10 @@ DashboardCtrl.controller('DashboardController', ['$scope', '$state', function($s
 	$scope.logout = function() {
 		$state.go('login');
 	}
+
+	// sidenav
+	$scope.openLeftMenu = function() {
+	  $mdSidenav('left').toggle();
+	};
 
 }]);

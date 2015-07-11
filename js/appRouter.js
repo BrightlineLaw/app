@@ -3,7 +3,7 @@ var appRouter = angular.module('appRouter', ['ui.router'])
 appRouter.config(function ($stateProvider, $urlRouterProvider) {
 	
 	// for any unmatched url, redirect to /login
-	$urlRouterProvider.otherwise('/login');
+	$urlRouterProvider.otherwise('/dashboard');
 
 	// setup states
 	$stateProvider
