@@ -7,5 +7,6 @@ var Brightline = angular.module('Brightline', [
 	'DashboardCtrl',
 	'ProfileCtrl',
 	'SettingsCtrl',
-	'HelpCtrl'
+	'HelpCtrl',
+	'ModulesCtrl'
 ]);

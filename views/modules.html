@@ -1,0 +1,50 @@
+<!-- begin ui-view -->
+<div layout="column" layout-fill>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <span>Brightline</span>
+      <!-- fill up the space between left and right area -->
+      <span flex></span>
+      <md-button ng-click="goToDashboard()">Dashboard</md-button>
+      <md-button ng-click="openLeftMenu()">Menu</md-button>
+      <md-button ng-click="logout()">Logout</md-button>
+    </div>
+  </md-toolbar>
+  <md-sidenav md-component-id="left" class="md-sidenav-left">
+    <md-content>
+      <md-card>
+        <p layout layout-align="center center">Menu</p>
+      </md-card>
+      <md-card ng-click="goToSettings()">
+        <p layout layout-align="center center">Settings</p>
+      </md-card>
+      <md-card ng-click="goToModules()">
+        <p layout layout-align="center center">Modules</p>
+      </md-card>
+    </md-content>
+  </md-sidenav>
+  <!-- create new module -->
+  <div layout="row">
+    <md-content flex offset="20" layout-padding>
+      <md-card class="md-whiteframe-z2">
+        <h3 layout layout-align="center center">Create New Module</h3>
+        <md-card-content>
+          <md-input-container flex>
+            <label>Title</label>
+            <input ng-model="module.title">
+          </md-input-container>
+          <md-input-container flex>
+            <label>Text</label>
+            <input ng-model="module.text">
+          </md-input-container>
+          <md-input-container flex offset="75">
+            <md-button class="md-raised md-primary">Save</md-button>
+          </md-input-container>
+        </md-card-content>
+      </md-card>
+    </md-content>
+    <md-content flex="20" layout-padding></md-content>
+  </div>
+  <!-- view & edit modules -->
+  <div layout="row"></div>
+</div>
