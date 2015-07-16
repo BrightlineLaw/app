@@ -10,7 +10,22 @@
       <md-button ng-click="logout()">Logout</md-button>
     </div>
   </md-toolbar>
-  <md-content>
-    <h1>{{testMessage}}</h1>
-  </md-content>
+  <md-sidenav md-component-id="left" class="md-sidenav-left">
+    <md-content>
+      <md-card>
+        <p layout layout-align="center center">Menu</p>
+      </md-card>
+      <md-card ng-click="goToSettings()">
+        <p layout layout-align="center center">Settings</p>
+      </md-card>
+      <md-card ng-click="goToModules()">
+        <p layout layout-align="center center">Modules</p>
+      </md-card>
+    </md-content>
+  </md-sidenav>
+  <div>
+    <md-content>
+      <h1>{{testMessage}}</h1>
+    </md-content>
+  </div>
 </div>

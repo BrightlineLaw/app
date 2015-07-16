@@ -24,6 +24,6 @@ DashboardCtrl.controller('DashboardController', ['$scope', '$state', '$mdSidenav
 	// sidenav
 	$scope.openLeftMenu = function() {
 	  $mdSidenav('left').toggle();
-	};
+	}
 
 }]);
