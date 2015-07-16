@@ -26,12 +26,25 @@
   <div layout="row">
     <md-content flex offset="20" layout-padding>
       <md-card class="md-whiteframe-z2">
-        <h1 layout layout-align="center center">New Module</h1>
+        <h3 layout layout-align="center center">Create New Module</h3>
         <md-card-content>
-          <p>Hello Boulder</p>
+          <md-input-container flex>
+            <label>Title</label>
+            <input ng-model="module.title">
+          </md-input-container>
+          <md-input-container flex>
+            <label>Text</label>
+            <input ng-model="module.text">
+          </md-input-container>
+          <md-input-container flex offset="75">
+            <md-button class="md-raised md-primary">Save</md-button>
+          </md-input-container>
         </md-card-content>
       </md-card>
     </md-content>
     <md-content flex="20" layout-padding></md-content>
+  </div>
+  <div layout="row">
+    
   </div>
 </div>
