@@ -32,5 +32,10 @@ appRouter.config(function ($stateProvider, $urlRouterProvider) {
 			templateUrl: 'views/help.html',
 			controller: 'HelpController'
 		})
+		.state('modules', {
+			url: '/modules',
+			templateUrl: 'views/modules.html',
+			controller: 'ModulesController'
+		})
 
 })
