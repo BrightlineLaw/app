@@ -5,9 +5,12 @@
       <span>Brightline</span>
       <!-- fill up the space between left and right area -->
       <span flex></span>
-      <md-button>Dashboard</md-button>
+      <md-button ng-click="goToDashboard()">Dashboard</md-button>
       <md-button ng-click="openLeftMenu()">Menu</md-button>
       <md-button ng-click="logout()">Logout</md-button>
     </div>
   </md-toolbar>
+  <md-content>
+    <h1>{{testMessage}}</h1>
+  </md-content>
 </div>
