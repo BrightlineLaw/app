@@ -1,9 +1,24 @@
 <!-- begin ui-view -->
-<div layout="row" layout-align="center">
-	<div flex offset="75">
-		<md-button class="md-fab" aria-label="Login" ng-click="goToDashboard()">+</md-button>
-	</div>
-	<!--
-	<a class="btn btn-default" ng-click="goToDashboard()">Login</a>
-	-->
+<div layout="row">
+  <md-content flex offset="30" layout-padding>
+    <md-card layout layout-align="center center" class="menuTitle md-whiteframe-z3">
+    	<md-card-content>LOGIN</md-card-content>
+    </md-card>
+    <md-card class="md-whiteframe-z2">
+      <md-card-content>
+        <md-input-container flex>
+          <label>Username</label>
+          <input ng-model="module.title">
+        </md-input-container>
+        <md-input-container flex>
+          <label>Password</label>
+          <input ng-model="module.text">
+        </md-input-container>
+        <md-input-container flex offset="75">
+          <md-button ng-click="goToDashboard()" class="md-raised md-primary">Submit</md-button>
+        </md-input-container>
+      </md-card-content>
+    </md-card>
+  </md-content>
+  <md-content flex="30" layout-padding></md-content>
 </div>
